@@ -45,6 +45,33 @@ export function Contact() {
             <label className="grid gap-1.5 text-sm" htmlFor="type">
               Type de site
               <select id="type" name="type" required className="rounded-xl border border-border/70 bg-white px-3 py-2.5">
+    <section id="contact" className="py-20">
+      <div className="section-shell grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <article>
+          <h2 className="font-[var(--font-heading)] text-3xl font-bold sm:text-4xl">Contact</h2>
+          <p className="mt-3 max-w-xl text-ink/75">
+            Décrivez votre projet en quelques lignes, je vous réponds rapidement avec une proposition adaptée.
+          </p>
+          <div className="mt-6 flex gap-3 text-sm">
+            <a href="#" className="rounded-full border border-border bg-white/70 px-3 py-1.5">Instagram</a>
+            <a href="#" className="rounded-full border border-border bg-white/70 px-3 py-1.5">LinkedIn</a>
+            <a href="#" className="rounded-full border border-border bg-white/70 px-3 py-1.5">Behance</a>
+          </div>
+        </article>
+
+        <form onSubmit={handleSubmit} className="glass-card p-6" noValidate>
+          <div className="grid gap-4">
+            <label className="grid gap-1.5 text-sm" htmlFor="name">
+              Nom
+              <input id="name" name="name" required className="rounded-xl border border-border bg-white px-3 py-2" />
+            </label>
+            <label className="grid gap-1.5 text-sm" htmlFor="email">
+              Email
+              <input id="email" name="email" type="email" required className="rounded-xl border border-border bg-white px-3 py-2" />
+            </label>
+            <label className="grid gap-1.5 text-sm" htmlFor="type">
+              Type de site
+              <select id="type" name="type" required className="rounded-xl border border-border bg-white px-3 py-2">
                 <option value="">Sélectionner…</option>
                 <option>Site vitrine</option>
                 <option>E-commerce</option>
