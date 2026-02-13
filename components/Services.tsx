@@ -15,24 +15,31 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="py-20 lg:py-24">
       <div className="section-shell">
-        <h2 className="font-[var(--font-heading)] text-3xl font-bold sm:text-4xl">Services</h2>
-        <p className="mt-3 max-w-2xl text-ink/75">Des offres claires, pensées pour particuliers, créateurs et entreprises.</p>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {services.map((service) => (
+        <h2 className="section-title">Services</h2>
+        <p className="section-copy">Des offres claires, pensées pour particuliers, créateurs et entreprises.</p>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {services.map((service, idx) => (
             <article
               key={service.title}
-              className="glass-card p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift"
+              className="glass-card p-8 shadow-[0_16px_36px_rgba(27,27,31,0.09)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_52px_rgba(27,27,31,0.14)]"
             >
-              <h3 className="font-[var(--font-heading)] text-xl font-semibold">{service.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink/75">{service.desc}</p>
+              <div
+                className={`mb-5 h-1.5 w-14 rounded-full ${
+                  idx === 0 ? 'bg-gradient-to-r from-violet to-sky' : idx === 1 ? 'bg-gradient-to-r from-sunset to-pink' : 'bg-gradient-to-r from-sky to-violet'
+                }`}
+              />
+              <h3 className="font-[var(--font-heading)] text-2xl font-bold tracking-tight">{service.title}</h3>
+              <p className="mt-4 text-[15px] leading-7 text-ink/75">{service.desc}</p>
             </article>
           ))}
         </div>
-        <aside className="glass-card mt-8 p-6">
-          <h3 className="font-[var(--font-heading)] text-lg font-semibold">Inclus dans chaque projet</h3>
-          <ul className="mt-4 grid gap-2 text-sm text-ink/80 sm:grid-cols-2">
+
+        <aside className="glass-card mt-10 bg-white/75 p-8">
+          <h3 className="font-[var(--font-heading)] text-2xl font-semibold">Inclus dans chaque projet</h3>
+          <ul className="mt-5 grid gap-3 text-sm text-ink/80 sm:grid-cols-2">
             <li>✓ Responsive</li>
             <li>✓ SEO de base</li>
             <li>✓ Performance</li>

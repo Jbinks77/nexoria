@@ -12,9 +12,8 @@ export function Hero() {
         priority
         className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-bg" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#120d25]/50 via-[#25163f]/30 to-bg" />
 
-      {/* Modifiez ici le positionnement/quantité des nuages si vous changez l'illustration hero. */}
       <Image
         src="/assets/cloud-1.png"
         alt=""
@@ -30,7 +29,7 @@ export function Hero() {
         aria-hidden
         width={230}
         height={110}
-        className="cloud absolute right-[9%] top-[22%] scale-[0.85] opacity-60 blur-[2px]"
+        className="cloud absolute right-[9%] top-[22%] scale-[0.85] opacity-65 blur-[2px]"
         style={{ animationName: 'float', animationDuration: '30s', animationDelay: '-6s' }}
       />
       <Image
@@ -43,29 +42,31 @@ export function Hero() {
         style={{ animationName: 'float', animationDuration: '38s', animationDelay: '-9s' }}
       />
 
-      <div className="section-shell relative flex min-h-[100svh] items-end pb-16 pt-28 sm:items-center sm:pb-20">
-        <div className="max-w-3xl rounded-3xl border border-white/20 bg-black/20 p-6 text-white backdrop-blur-md sm:p-10">
-          {/* Modifiez ici le message principal. */}
-          <h1 className="font-[var(--font-heading)] text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
+      <div className="section-shell relative flex min-h-[100svh] items-end pb-16 pt-36 sm:items-center sm:pb-20">
+        <div className="max-w-3xl rounded-[2rem] border border-white/25 bg-black/30 p-7 text-white backdrop-blur-xl sm:p-11">
+          <h1 className="font-[var(--font-heading)] text-5xl font-bold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
             Des sites beaux, rapides et pensés pour convertir.
           </h1>
-          <p className="mt-4 text-base text-white/90 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
             Web design • Développement • Identité visuelle
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#creations" className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5">
+          <div className="mt-9 flex flex-wrap gap-3">
+            <a
+              href="#creations"
+              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink shadow-[0_12px_28px_rgba(255,255,255,0.25)] transition hover:-translate-y-0.5"
+            >
               Voir mes créations
             </a>
             <a
               href="#contact"
-              className="rounded-full border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+              className="rounded-full border border-white/70 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
             >
               Demander un devis
             </a>
           </div>
-          <ul className="mt-7 flex flex-wrap gap-2">
+          <ul className="mt-8 flex flex-wrap gap-2.5">
             {badges.map((item) => (
-              <li key={item} className="rounded-full border border-white/35 bg-white/20 px-3 py-1.5 text-xs font-medium uppercase tracking-wide">
+              <li key={item} className="rounded-full border border-white/35 bg-white/20 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.12em]">
                 {item}
               </li>
             ))}

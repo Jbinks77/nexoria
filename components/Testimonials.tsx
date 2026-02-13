@@ -18,14 +18,14 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-20" aria-label="Témoignages clients">
+    <section className="py-20 lg:py-24" aria-label="Témoignages clients">
       <div className="section-shell">
-        <h2 className="font-[var(--font-heading)] text-3xl font-bold sm:text-4xl">Témoignages</h2>
-        <div className="mt-8 grid gap-5 md:grid-cols-3">
+        <h2 className="section-title">Témoignages</h2>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {testimonials.map((item) => (
-            <article key={item.name} className="glass-card p-6 shadow-soft">
+            <article key={item.name} className="glass-card p-7 shadow-[0_14px_32px_rgba(27,27,31,0.08)]">
               <div className="flex items-center gap-3">
-                <div className="grid h-11 w-11 place-content-center rounded-full bg-gradient-to-br from-violet/35 to-pink/35 text-sm font-bold">
+                <div className="grid h-12 w-12 place-content-center rounded-full bg-gradient-to-br from-violet/35 to-pink/35 text-sm font-bold">
                   {item.name[0]}
                 </div>
                 <div>
@@ -34,7 +34,7 @@ export function Testimonials() {
                 </div>
               </div>
               <p className="mt-4 text-amber-500">★★★★★</p>
-              <p className="mt-3 text-sm text-ink/80">{item.text}</p>
+              <p className="mt-3 text-[15px] leading-7 text-ink/80">{item.text}</p>
             </article>
           ))}
         </div>

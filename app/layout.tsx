@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter, Poppins } from 'next/font/google';
+import { Inter, Sora } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-body',
-  weight: ['400', '500', '600'],
+  weight: ['400', '500'],
   display: 'swap',
 });
 
-const poppins = Poppins({
+const sora = Sora({
   subsets: ['latin'],
   variable: '--font-heading',
   weight: ['600', '700'],
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="fr" className={`${inter.variable} ${sora.variable}`}>
       <body className="font-[var(--font-body)]">{children}</body>
     </html>
   );
