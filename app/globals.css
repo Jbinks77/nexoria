@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fff6f0;
+  --ink: #1b1b1f;
+  --card: rgba(255, 255, 255, 0.78);
+  --border: rgba(27, 27, 31, 0.12);
+  --violet: #8e7cff;
+  --pink: #ff9ad5;
+  --sunset: #ffa86b;
+  --sky: #8ed8f8;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-ink antialiased;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.glass-card {
+  @apply rounded-3xl border border-border bg-card backdrop-blur-md;
+}
+
+.cloud {
+  pointer-events: none;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .cloud {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+}
