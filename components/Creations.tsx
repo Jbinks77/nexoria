@@ -72,7 +72,7 @@ export function Creations() {
               className={`rounded-full border px-4 py-2.5 text-sm font-medium transition duration-300 ${
                 activeFilter === filter
                   ? 'border-transparent bg-gradient-to-r from-violet to-[#7462ff] text-white shadow-[0_10px_24px_rgba(142,124,255,0.4)]'
-                  : 'border-border/70 bg-white/80 text-ink/80 hover:-translate-y-0.5 hover:border-violet/35 hover:bg-white'
+                  : 'border-[rgba(27,27,31,0.12)] bg-white/80 text-ink/80 hover:-translate-y-0.5 hover:border-violet/35 hover:bg-white'
               }`}
             >
               {filter}
