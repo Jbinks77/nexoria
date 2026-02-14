@@ -22,7 +22,7 @@ export function About() {
           <h3 className="font-[var(--font-heading)] text-2xl font-bold tracking-tight">Mes points forts</h3>
           <ul className="mt-5 space-y-3.5">
             {strengths.map((strength) => (
-              <li key={strength} className="rounded-2xl border border-[rgba(27,27,31,0.12)] bg-white/70 px-4 py-3 text-sm font-medium">
+              <li key={strength} className="rounded-2xl border border-border/50 bg-white/70 px-4 py-3 text-sm font-medium">
                 {strength}
               </li>
             ))}

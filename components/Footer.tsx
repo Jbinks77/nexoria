@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export function Footer() {
   return (
-    <footer className="border-t border-[rgba(27,27,31,0.12)] py-10">
+    <footer className="border-t border-border/70 py-10">
       <div className="section-shell flex flex-col items-center justify-between gap-4 text-sm sm:flex-row">
         <div className="flex items-center gap-3">
           <Image src="/assets/logo-nexiora.png" alt="Logo Nexiora" width={160} height={40} className="h-10 w-auto" />
