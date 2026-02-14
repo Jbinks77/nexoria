@@ -11,7 +11,7 @@ const links = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-bg/70 backdrop-blur-2xl">
+    <header className="sticky top-0 z-50 border-b border-[rgba(27,27,31,0.12)] bg-bg/70 backdrop-blur-2xl">
       <div className="section-shell flex h-24 items-center justify-between gap-4 md:h-28">
         <a href="#hero" className="inline-flex items-center gap-2 transition duration-300 hover:scale-105">
           <Image

@@ -28,13 +28,13 @@ export function Contact() {
           </p>
 
           <div className="mt-7 flex gap-3 text-sm">
-            <a href="#" className="rounded-full border border-border/70 bg-white/75 px-3.5 py-2">
+            <a href="#" className="rounded-full border border-[rgba(27,27,31,0.12)] bg-white/75 px-3.5 py-2">
               Instagram
             </a>
-            <a href="#" className="rounded-full border border-border/70 bg-white/75 px-3.5 py-2">
+            <a href="#" className="rounded-full border border-[rgba(27,27,31,0.12)] bg-white/75 px-3.5 py-2">
               LinkedIn
             </a>
-            <a href="#" className="rounded-full border border-border/70 bg-white/75 px-3.5 py-2">
+            <a href="#" className="rounded-full border border-[rgba(27,27,31,0.12)] bg-white/75 px-3.5 py-2">
               Behance
             </a>
           </div>
@@ -44,17 +44,17 @@ export function Contact() {
           <div className="grid gap-4">
             <label className="grid gap-1.5 text-sm" htmlFor="name">
               Nom
-              <input id="name" name="name" required className="rounded-xl border border-border/70 bg-white px-3 py-2.5" />
+              <input id="name" name="name" required className="rounded-xl border border-[rgba(27,27,31,0.12)] bg-white px-3 py-2.5" />
             </label>
 
             <label className="grid gap-1.5 text-sm" htmlFor="email">
               Email
-              <input id="email" name="email" type="email" required className="rounded-xl border border-border/70 bg-white px-3 py-2.5" />
+              <input id="email" name="email" type="email" required className="rounded-xl border border-[rgba(27,27,31,0.12)] bg-white px-3 py-2.5" />
             </label>
 
             <label className="grid gap-1.5 text-sm" htmlFor="type">
               Type de site
-              <select id="type" name="type" required className="rounded-xl border border-border/70 bg-white px-3 py-2.5">
+              <select id="type" name="type" required className="rounded-xl border border-[rgba(27,27,31,0.12)] bg-white px-3 py-2.5">
                 <option value="">Sélectionner...</option>
                 <option>Site vitrine</option>
                 <option>E-commerce</option>
@@ -65,7 +65,7 @@ export function Contact() {
 
             <label className="grid gap-1.5 text-sm" htmlFor="budget">
               Budget
-              <select id="budget" name="budget" required className="rounded-xl border border-border/70 bg-white px-3 py-2.5">
+              <select id="budget" name="budget" required className="rounded-xl border border-[rgba(27,27,31,0.12)] bg-white px-3 py-2.5">
                 <option value="">Sélectionner...</option>
                 <option>- 1000€</option>
                 <option>1000€ - 2500€</option>
@@ -76,7 +76,7 @@ export function Contact() {
 
             <label className="grid gap-1.5 text-sm" htmlFor="message">
               Message
-              <textarea id="message" name="message" rows={5} required className="rounded-xl border border-border/70 bg-white px-3 py-2.5" />
+              <textarea id="message" name="message" rows={5} required className="rounded-xl border border-[rgba(27,27,31,0.12)] bg-white px-3 py-2.5" />
             </label>
 
             <button
